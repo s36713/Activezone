@@ -1,4 +1,12 @@
-package PACKAGE_NAME;
+public interface Billable {
+    double calculateMonthlyNetPrice();
+    double calculateMonthlyGrossPrice();
+}
 
-public class Billable {
+interface RemoteAccess {
+    boolean hasOnlineAccess();
+}
+
+interface Freezable {
+    boolean canFreeze();
 }
